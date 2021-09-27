@@ -1,0 +1,2 @@
+
+I have used in the preprocessed MC imputer (Iterative Imputation) to deal with the missing values, then for modeling I unite the 2 target columns and later use a LGBMmodel
