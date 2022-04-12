@@ -32,4 +32,4 @@ If you liked what you saw, want to have a chat with me about the portfolio, work
 
 ### Support My Work
 
-If this project inspired you, gave you ideas for your own portfolio or helped you, please consider [buying me a coffee](https://www.buymeacoffee.com/aovaldes2) ❤️.  	- 
+_If this project inspired you, gave you ideas for your own portfolio or helped you, please consider [buying me a coffee](https://www.buymeacoffee.com/aovaldes2) ❤️._ 
