@@ -11,12 +11,12 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	- [Of Genomes And Genetics](https://github.com/aovaldes2/-Data-Science-Portfolio/tree/main/Of%20Genomes%20And%20Genetics/notebooks): A model to predict the Genetic disorder with the Disorder subclass of children's. Identified a reliable model for the genetic diagnosis utilizing machine learning. 
 	- [Forest Cover Type Prediction](https://github.com/aovaldes2/-Data-Science-Portfolio/blob/main/Forest_Cover_Type_Prediction.ipynb): The goal of the Project (and competition): to predict seven different cover types in four different wilderness areas of the Roosevelt National Forest of Northern Colorado with the best accuracy.
 	- [New York City Taxi-Trip Duration](https://github.com/aovaldes2/-Data-Science-Portfolio/blob/main/New_York_City_Taxi_Trip_Duration.ipynb): Kaggle is challenging you to build a model that predicts the total ride duration of taxi trips in New York City.
-	_Tools: scikit-learn, Pandas, Seaborn, Matplotlib
+	
+	_Tools: scikit-learn, Pandas, Seaborn, Matplotlib_
 
   - ### Natural Language Processing
 
 	- [Quora Insincere Questions Classification](https://github.com/aovaldes2/-Data-Science-Portfolio/blob/main/New_York_City_Taxi_Trip_Duration.ipynb): Quora is a platform that empowers people to learn from each other. On Quora, people can ask questions and connect with others who contribute unique insights and quality answers. A key challenge is to weed out insincere questions -- those founded upon false premises, or that intend to make a statement rather than look for helpful answers.
-
 In this project we will develop models that identify and flag insincere questions.
 
 	_Tools: Pandas, Seaborn, Matplotlib, NLTK, scikit_
