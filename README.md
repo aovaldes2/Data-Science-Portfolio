@@ -23,7 +23,7 @@ In this project we will develop models that identify and flag insincere question
 
 - ### Data Analysis and Visualisation
 	- __Exploratory Data Analysis projects__ 
-		- [Madrid House Price](https://github.com/aovaldes2/-Data-Science-Portfolio/blob/main/Madrid%20House%20Price%20EDA/Madrid_RealState.ipynb): Analysis of the different factors that can influence the price of houses in Madrid.
+	- [Madrid House Price](https://github.com/aovaldes2/-Data-Science-Portfolio/blob/main/Madrid%20House%20Price%20EDA/Madrid_RealState.ipynb): Analysis of the different factors that can influence the price of houses in Madrid.
 		
 	_Tools: Pandas, Seaborn and Matplotlib_
 
