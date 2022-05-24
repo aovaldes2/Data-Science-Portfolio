@@ -54,7 +54,7 @@ I used two main notebooks
 1_GeneticDisorder_preprocessing.ipynb ([link](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/Of%20Genomes%20And%20Genetics/notebooks/1_GeneticDisorder_preprocessing.ipynb))
 
 Although a much more extensive EDA was performed on the notebook named
-GeneticDisorderEDAv1 the most important transformations are made to the data for modeling occurred on this one. Of the 44 columns, 13 that would not provide relevant information were discarded at first, from the first moment it can be observed in the data that they present many missing data to solve this problem, MICE (Multiple Imputations by Chained Equations) imputation will be applied. This approach may be generally referred to as fully conditional specification (FCS) or multivariate imputation by chained equations (MICE).
+GeneticDisorderEDAv1 the most important transformations to the data for modeling occurred on this one. Of the 44 columns, 13 that would not provide relevant information were discarded at first, from the first moment it can be observed in the data that they present many missing data to solve this problem, MICE (Multiple Imputations by Chained Equations) imputation will be applied. This approach may be generally referred to as fully conditional specification (FCS) or multivariate imputation by chained equations (MICE).
 
 > This methodology is attractive if the multivariate distribution is a reasonable description of the data. FCS specifies the multivariate imputation model on a variable-by-variable basis by a set of conditional densities, one for each incomplete variable. Starting from an initial imputation, FCS draws imputations by iterating over the conditional densities. A low number of iterations (say 10–20) is often sufficient.
 
