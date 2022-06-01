@@ -28,7 +28,7 @@ In this project we will develop models that identify and flag insincere question
 	
 	_Tools: Pandas, Seaborn and Matplotlib_
 
-----------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Of Genomes And Genetics <a id='of-genomes-and-genetics'></a>
 
 You are given a dataset that contains medical information of children who have genetic disorders. Predict the following:
@@ -82,7 +82,56 @@ Then we proceed to run the models whose results can be seen in the following tab
 The best ranked result would be the CatboostClassifier model in 18th place out of 2138 participants.
 
 --------------------------------------------------------------------------------
+# Forest Cover Type Prediction <a id='forest-cover-type-prediction'></a>
 
+	
+In this Kaggle competition ([link](https://www.kaggle.com/competitions/forest-cover-type-prediction/overview)), we are asked to predict forest cover type from strictly cartographic variables. (USFS). The data is in raw (unscaled) format and contains binary columns of data for qualitative independent variables, such as wilderness and soil type.
+
+The study area includes four wilderness areas located in the Roosevelt National Forest of northern Colorado. Each observation is a 30m x 30m patch. You are asked to predict an integer classification for the forest cover type. The seven types are:
+
+1 - Spruce/Fir
+
+2 - Lodgepole Pine
+
+3 - Ponderosa Pine
+
+4 - Cottonwood/Willow
+
+5 - Aspen
+
+6 - Douglas-fir
+
+7 - Krummholz
+
+The training set (15120 observations) contains both features and the Cover_Type. The test set contains only the features. You must predict the Cover_Type for every row in the test set (565892 observations).
+
+
+In this case I use a single notebook loadable from google colab.
+
+First, the corresponding EDA is carried out. In this EDA, the great variability of the data comes to light from distance, grades, indices to categorical variables that represent the existence or not of different types of soils in the different Wilderness Areas (which also represent a variable).
+It can also be seen how the target variable is well distributed in the training data (2160 each). 
+
+
+Two types of univariate and bivariate analyzes are performed in the EDA. 
+
+#### Univariate Analysis resume:
+
+* Train dataset has 15120 rows and 56 columns.
+* Each column has numeric (integer/float) datatype.
+* There are no NA in the dataset.Thus dataset is properly formatted and balanced.
+* Only 4 columns had outliers.
+    1. Horizontal_Distance_To_Hydrology
+    2. Vertical_Distance_To_Hydrology
+    3. Horizontal_Distance_To_Roadways
+    4. Horizontal_Distance_To_Fire_Points
+* Cover_Type is our label/target column
+
+#### Bivariate Analysis resume:
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at aovaldes2@gmail.com. 
 
 ### Support My Work
