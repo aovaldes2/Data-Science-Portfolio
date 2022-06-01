@@ -60,7 +60,7 @@ GeneticDisorderEDAv1 the most important transformations to the data for modeling
 
 — mice: Multivariate Imputation by Chained Equations in R, 2009.
 
-In the data,  are observed non-numeric values whose transformation is necessary for our modeling. For this, the variables were separated between categorical and non-categorical to later apply the ordinal encoding method to encode the categorical variables. The variant of using ordinal encoding came from experimentation and obviously these operations were performed by joining the test and training data.
+Non-numeric values can be observed in the data whose transformation is important for our modelling. For this, the variables were separated between categorical and non-categorical to later apply the ordinal encoding method to encode the categorical variables. The variant of using ordinal encoding came from experimentation and obviously these operations were performed by joining the test and training data.
 
 2_GeneticDisorder_finalmodelling.ipynb ([link](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/Of%20Genomes%20And%20Genetics/notebooks/2_GeneticDisorder_finalmodeling.ipynb))
 
