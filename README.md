@@ -128,11 +128,37 @@ Two types of univariate and bivariate analyzes are performed in the EDA.
 
 #### Bivariate Analysis resume:
 
+* The importance of the categorical variable Wilderness Area Type (created from the variables Wilderness_Area#) is verified by analyzing the density and distribution of the values with respect to the values of our target variable Cover_Type.
+* The Relation and Distribution of continuous variables (Elevation, Aspect, Slope, Distance and Hillsahde columns) were analyzed in addition to the  highly correlated features such as:
+	1. hillshade noon - hillshade 3pm
+	2. hillshade 3 pm - hillshade 9 am
+	3. vertical distance to hydrology - horizontal distance to hydrology
+	4. elevation - slope
 
+Some high correlations between hillshade variables, distance to hydrology. Makes sense since these variables seem interrelated.
+
+
+* The pearson coefficients showed that none of the base features have significantly linear effect in determining the label cover type. In addition, one interesting finding was that Soil Type 7 and 15 correlation are none in the pearson table, or what is the same it has no effect on determining the label Cover_Type according to the data.
+
+#### Baseline Results (No Feature Engineering)
+In this section, the results of different models would be analyzed with the features without Feature Engineering to select a model in the first instance.
+
+![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/i0Comparations%5BFCTP%5D.png)
+
+Extreme (extra) random forests outperformed other algorithms with better accuracy performance in this case. The reason might be, I did not focus on tuning the parameters of the each algorithm and used defaults values instead. In any case, due to the type of problem that arises, we will focus on the feature engineering and hyperparameter tuning.
+
+This baseline submision score 0.74071 in the Kaggle Competition
+
+#### Feature Engineering & Selection
+
+ Since the test data is much larger than the training data, and performs differently, I'm not going to remove any predictors. Instead I'm going to focus on creating new ones that highlight similarities in the data. Due to the characteristics of some features, it would make sense to introduce new ones and observe their implication in the models.
+ 
+ Feature engineering was separated into blocks to compare their improvement in submissions. Engineering was used from the simplest of adding columns or having maxima to some more complex ones such as adding absolutes or Euclidean distances to certain points, always based on the characteristics of the features themselves.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at aovaldes2@gmail.com. 
+
 
 ### Support My Work
 
