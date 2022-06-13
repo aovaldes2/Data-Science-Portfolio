@@ -168,7 +168,7 @@ Also as part of the experimentation, the parameters of a Light Gradient Boosting
 ```
 Best LGBMClassifier Params: {'num_leaves': 31, 'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.6}
 ```
-In the following image we can see the best submissions where it can be noted that in the entries written in the form Name(1) all the predictors were already included but as part of the experimentation in the first instance there were fewer new features.
+In the following image we can see the best submissions where it can be noted that in the entries written in the form Name(1) all the predictors were already included but as part of the experimentation in the first instance there were fewer new features.a
 
 ![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/Submisions%5BFCTP%5D.png)
 
