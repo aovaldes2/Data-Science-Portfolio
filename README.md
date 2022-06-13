@@ -153,8 +153,24 @@ This baseline submision score 0.74071 in the Kaggle Competition
 
  Since the test data is much larger than the training data, and performs differently, I'm not going to remove any predictors. Instead I'm going to focus on creating new ones that highlight similarities in the data. Due to the characteristics of some features, it would make sense to introduce new ones and observe their implication in the models.
  
- Feature engineering was separated into blocks to compare their improvement in submissions. Engineering was used from the simplest of adding columns or having maxima to some more complex ones such as adding absolutes or Euclidean distances to certain points, always based on the characteristics of the features themselves.
+ Feature engineering was separated into blocks to compare their improvement in the scores. Engineering was used from the simplest of adding columns or having maxima to some more complex ones such as adding absolutes or Euclidean distances to certain points, always based on the characteristics of the features themselves.
+ 
+ Adding a few at a time and then checked the results on the validation data we can see especially for the extra trees model, accuracy kept increasing as predictors were added.
+ 
+ #### Perform Hyperparameter Tuning on the Bests Models
 
+As we know optimizing the hyperparameters for machine learning models is vital to the performance of the machine learning models and the process of tuning the HPs is not intuitive and can be a complex task. In this case its use Randomized Search for a shorter run-time although may not return the best combination of hyper-parameters that would return the best accuracy, this method doesn't consider past evaluations and it will continue the iterations regardless of the results. In the end, for the chosen model, it was obtained:
+
+```
+Best ExtraTreesClassifier Params: {'n_estimators': 300, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': None}
+```
+Also as part of the experimentation, the parameters of a Light Gradient Boosting Machine classifier model were tuned with the same predictors mentioned above:
+```
+Best LGBMClassifier Params: {'num_leaves': 31, 'n_estimators': 200, 'max_depth': 5, 'learning_rate': 0.6}
+```
+In the following image we can see the best submissions where it can be noted that in the entries written in the form Name(1) all the predictors were already included but as part of the experimentation in the first instance there were fewer new features.
+
+![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/Submisions%5BFCTP%5D.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at aovaldes2@gmail.com. 
