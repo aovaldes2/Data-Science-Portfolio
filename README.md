@@ -10,7 +10,7 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 
 	- [Of Genomes And Genetics](https://github.com/aovaldes2/-Data-Science-Portfolio/tree/main/Of%20Genomes%20And%20Genetics/notebooks): A model to predict  children's Genetic disorders with the Disorder subclass. The aim is to identify a reliable model for the genetic diagnosis using machine learning ([Details](#of-genomes-and-genetics)). 
 	- [Forest Cover Type Prediction](https://github.com/aovaldes2/-Data-Science-Portfolio/blob/main/Forest_Cover_Type_Prediction.ipynb): The goal of the Project (and competition): to predict seven different cover types in four different wilderness areas of the Roosevelt National Forest of Northern Colorado with the best accuracy([Details](#forest-cover-type-prediction)). 
-	- [New York City Taxi-Trip Duration](https://github.com/aovaldes2/-Data-Science-Portfolio/blob/main/New_York_City_Taxi_Trip_Duration.ipynb): Kaggle is challenging you to build a model that predicts the total ride duration of taxi trips in New York City.
+	- [New York City Taxi-Trip Duration](https://github.com/aovaldes2/-Data-Science-Portfolio/blob/main/New_York_City_Taxi_Trip_Duration.ipynb): Kaggle is challenging you to build a model that predicts the total ride duration of taxi trips in New York City ([Details](#new-york-city-taxi-trip-duration)). 
 	
 	_Tools: scikit-learn, Pandas, Seaborn, Matplotlib_
 
@@ -171,6 +171,20 @@ Best LGBMClassifier Params: {'num_leaves': 31, 'n_estimators': 200, 'max_depth':
 In the following image we can see the best submissions where it can be noted that in the entries written in the form Name(1) all the predictors were already included but as part of the experimentation in the first instance there were fewer created features.
 
 ![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/Submisions%5BFCTP%5D.png)
+
+
+--------------------------------------------------------------------------------
+# New York City Taxi-Trip Duration <a id='new-york-city-taxi-trip-duration'></a>
+
+
+In this competition, Kaggle is challenging you to build a model that predicts the total ride duration of taxi trips in New York City. Your primary dataset is one released by the NYC Taxi and Limousine Commission, which includes pickup time, geo-coordinates, number of passengers, and several other variables.
+
+The competition dataset is based on the 2016 NYC Yellow Cab trip record data made available in Big Query on Google Cloud Platform. The data was sampled and cleaned for the purposes of this playground competition. Based on individual trip attributes, participants should predict the duration of each trip in the test set.
+
+File descriptions:
+
+*train.csv - the training set (contains 1458644 trip records)
+*test.csv - the testing set (contains 625134 trip records)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at aovaldes2@gmail.com. 
