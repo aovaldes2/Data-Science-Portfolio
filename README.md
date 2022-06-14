@@ -210,12 +210,35 @@ Another important feature created in this section will be the direction of the t
 
 ![img2NYCTD](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/DirIntu%5BNYCTD%5D.png)
 
+##### Clustering
+Besides of keeping entire list of latitude and longitute, the data will be grouped by some approximate locations. It might be helpful for tree-based algorithms.
+
+#### Additional Datasets
+
+##### OSMR features
+We had only rough distance estimates in the previous versions. We will now use additional data extracted from OpenStreetMap which was used successfully in the top scores. Most of the high scores use [Data about Fastest Routes](https://www.kaggle.com/oscarleo/new-york-city-taxi-with-osrm). Travel distance should be more relevent here. The difficult part is to adquire this feature. Thanks to Oscarleo who manage to pull it off from OSRM.
+
+New features were added to our model from this database, such as _total_distance,total_travel_time_ and _number_of_steps_.
 
 
+##### Weather features
+
+This dataset([KNYC Metars 2016](https://www.kaggle.com/datasets/cabaki/knycmetars2016)) is ment to be used as a extra information for those willing to extract conclusions from their own dataset where hourly weather information could be useful for their predictions / analysis. This is the METARs aggregated information for 2016 in KNYC. In this case where added _minimum temperature, precipitation, snow fall_ and _snow depth_ to our model.
 
 
-The bivariate analysis of the features after their engineering is much more complete, so it was used to determine very interesting data such as peak hours in speed,	
+#### Model Training(Hyperparameter Tuning)
 
+
+Several algorithms can be used in this case I prefer a tree-based algorithm XGBRegressor. As we know optimizing the hyperparameters for machine learning models is vital to the performance of the machine learning models and the process of tuning the HPs is not intuitive and can be a complex task. In this case its use Randomized Search for a shorter run-time although may not return the best combination of hyper-parameters that would return the best score(neg_mean_squared_error), this method doesn't consider past evaluations and it will continue the iterations regardless of the results. In the end, for the chosen model, it was obtained:
+
+```
+<bound method XGBModel.get_xgb_params of XGBRegressor(booster='gblinear', colsample_bytree=0.6, eta=0.04,
+             eval_metric='rmse', gamma=2, lambda=2, max_depth=10,
+             min_child_weight=5, n_estimators=500, nthread=-1, predictor='u',
+             random_state=42, silent=1, subsample=0.75)>
+```
+
+![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/Submision%5BNYTD%5D.png)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
