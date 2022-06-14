@@ -170,7 +170,7 @@ Best LGBMClassifier Params: {'num_leaves': 31, 'n_estimators': 200, 'max_depth':
 ```
 In the following image we can see the best submissions where it can be noted that in the entries written in the form Name(1) all the predictors were already included but as part of the experimentation in the first instance there were fewer created features.
 
-![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/Submisions%5BFCTP%5D.png)
+![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/Submisions%5BFCTP%5D.png)
 
 
 --------------------------------------------------------------------------------
@@ -183,8 +183,40 @@ The competition dataset is based on the 2016 NYC Yellow Cab trip record data mad
 
 File descriptions:
 
-*train.csv - the training set (contains 1458644 trip records)
-*test.csv - the testing set (contains 625134 trip records)
+* train.csv - the training set (contains 1458644 trip records)
+* test.csv - the testing set (contains 625134 trip records)
+
+In this case I use a single notebook loadable from google colab.
+
+In the first instance, a simple EDA is carried out with the base features of the problem, where it is observed that there are no Nan elements in the database, that this database has features such as pickup and dropoff time(presented as datetime) as well as the respective coordinates of the trip (each presented as a float).
+Other types of data such as object or integers its found in the rest of the features such as _passenger_count, store_and_fwd_flag, vendor_id_. The target feature _trip_duration_ was presented as an integer since it represents the time in seconds.
+
+#### Feature Creation(Feature Engineering & Selection)
+
+
+##### Distances
+New features were created from existing ones, for example, the datetimes were broken down to the unit of minutes, as well as the coordinates of the trip were used to calculate 2 types of distances,**Haversine Distance** and **Dummy Distance**.
+
+> **Haversine Distance** - Euclidean Distance works for the flat surface like a Cartesian plain however, Earth is not flat. So we have to use a special type of formula known as Haversine Distance. Haversine Distance can be defined as the angular distance between two locations on the Earth's surface.
+
+> **Dummy Distance** - The distance calculated from Haversine Distance made up of the perpendicular paths between the two points in question (Let P1(lat1, lng1) and P2(lat2, lng2) then dummy.distance = haversine.distance(lat1, lng1, lat1, lng2)+haversine.distance(lat1, lng1, lat2, lng1)).
+
+These new features gave the possibility of calculating the average speed of each trip as well as its breakdown by hours, day of the week, etc.
+
+![img1NYCTD](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/SpeedDesc%5BNYCTD%5D.png)
+
+##### Direction
+Another important feature created in this section will be the direction of the trip, this importance could be seen graphically by representing the differences between latitudes and longitudes:
+
+![img2NYCTD](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/DirIntu%5BNYCTD%5D.png)
+
+
+
+
+
+The bivariate analysis of the features after their engineering is much more complete, so it was used to determine very interesting data such as peak hours in speed,	
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at aovaldes2@gmail.com. 
