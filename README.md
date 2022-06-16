@@ -211,7 +211,7 @@ Another important feature created in this section will be the direction of the t
 ![img2NYCTD](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/DirIntu%5BNYCTD%5D.png)
 
 ##### Clustering
-Besides of keeping entire list of latitude and longitute, the data will be grouped by some approximate locations. It might be helpful for tree-based algorithms.
+Besides of keeping entire list of latitude and longitute, the data will be grouped by some approximate locations. It might be helpful for tree-based algorithms. New features were created from clustering such as _pickup_cluster_ and _dropoff_cluster_.
 
 #### Additional Datasets
 
