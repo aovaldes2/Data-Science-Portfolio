@@ -451,6 +451,8 @@ The metric used in the competition is the F-1 Score, which could not be directly
 #### Results
 The TextCNN was descarted because it have too poorly results compared with the other models, the named Bidirectional RNN(LSTM) have an score of 0.66684 with an threshold at 0.5 meanwhile the Bidirectional RNN(LSTM)II have 0.67245 with an threshold at 0.35 then the Blending model resultant of a simple lineal combination of the two latets models have the best score of 0.68091.
 
+![img3QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/imgQuoraSubmissions%5BQIQ%5D.png)
+
 #### Conclusion:
 This competition had as its main peculiarity that the solutions should run with the competitor's kernels only. My solution focused on deep learning methods, and explore widely used methodologies in this field such as bidirectional RNN, Convolutions layers, Pooling layers etc. It has been an opportunity to learn a lot from kaggle forums and public solutions. Finding more word embeddings and model assembly were the key factors for improving the F1-score.
 
