@@ -437,6 +437,7 @@ model2.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'
 ```
 
 __Blending__
+
 In this case its used a simple lineal combination of the two best models looking for a better score.
 ```
 final_preds_val = 0.5*pred_modelBRNN_x_val+0.5*pred_modelBRNN2_x_val
