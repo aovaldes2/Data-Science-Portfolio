@@ -17,7 +17,7 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
   - ### Natural Language Processing
 
 	- [Quora Insincere Questions Classification](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/Quora_Insincere_Questions.ipynb): Quora is a platform that empowers people to learn from each other. On Quora, people can ask questions and connect with others who contribute unique insights and quality answers. A key challenge is to weed out insincere questions -- those founded upon false premises, or that intend to make a statement rather than look for helpful answers.
-In this project we will develop models that identify and flag insincere questions.
+In this project we will develop models that identify and flag insincere questions ([Details](#quora_insincere_questions)).
 
 	_Tools: Pandas, Seaborn, Matplotlib, NLTK, scikit_
 
@@ -239,6 +239,12 @@ Several algorithms can be used in this case I prefer a tree-based algorithm XGBR
 ```
 
 ![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/Submision%5BNYTD%5D.png)
+
+
+--------------------------------------------------------------------------------
+# Quora Insincere Questions Classification <a id='quora_insincere_questions'></a>
+
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
