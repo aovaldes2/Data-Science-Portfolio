@@ -456,7 +456,7 @@ The TextCNN was descarted because it have too poorly results compared with the o
 #### Conclusion:
 This competition had as its main peculiarity that the solutions should run with the competitor's kernels only. My solution focused on deep learning methods, and explore widely used methodologies in this field such as bidirectional RNN, Convolutions layers, Pooling layers etc. It has been an opportunity to learn a lot from kaggle forums and public solutions. Finding more word embeddings and model assembly were the key factors for improving the F1-score.
 
-The F1-score obtained from Blending method performed better than any other model that i tried, giving a private score of 0..68091. Although it could be considered a good score for the problem in question its a little far from the winnings scores(0.71323).
+The F1-score obtained from the blending method performed better than any other model that i tried, giving a private score of 0..68091. Although it could be considered a good score for the problem in question its a little far from the winnings scores(0.71323).
 
 Additional improvements can be achieved by continuing to experiment with more combinations of the layers that were used in this work, as well as using different combinations of word embeddings.
 
