@@ -177,7 +177,7 @@ In the following image we can see the best submissions where it can be noted tha
 # New York City Taxi-Trip Duration <a id='new-york-city-taxi-trip-duration'></a>
 
 
-In this competition, Kaggle is challenging you to build a model that predicts the total ride duration of taxi trips in New York City. Your primary dataset is one released by the NYC Taxi and Limousine Commission, which includes pickup time, geo-coordinates, number of passengers, and several other variables.
+In this competition [link](https://www.kaggle.com/competitions/nyc-taxi-trip-duration/submissions), Kaggle is challenging you to build a model that predicts the total ride duration of taxi trips in New York City. Your primary dataset is one released by the NYC Taxi and Limousine Commission, which includes pickup time, geo-coordinates, number of passengers, and several other variables.
 
 The competition dataset is based on the 2016 NYC Yellow Cab trip record data made available in Big Query on Google Cloud Platform. The data was sampled and cleaned for the purposes of this playground competition. Based on individual trip attributes, participants should predict the duration of each trip in the test set.
 
@@ -244,7 +244,85 @@ Several algorithms can be used in this case I prefer a tree-based algorithm XGBR
 --------------------------------------------------------------------------------
 # Quora Insincere Questions Classification <a id='quora_insincere_questions'></a>
 
+ A Kaggle Competition hosted by Quora for improving its online conversations[link](https://www.kaggle.com/competitions/quora-insincere-questions-classification/overview).
+ 
+ Quora is a platform that empowers people to learn from each other. On Quora, people can ask questions and connect with others who contribute unique insights and quality answers. A key challenge is to weed out insincere questions — those founded upon false premises, or that intend to make a statement rather than looking for helpful answers.
+ 
+ In this competition it will be develop models that identify and flag insincere questions.
+ 
+ __General Description__
+An insincere question is defned as a question intended to make a statement rather than look for helpful answers. Some characteristics tha can signify that a question is insincere:
 
+* Has a non-neutral tone
+    * Has an exaggerated tone to underscore a point about a group of people
+    * Is rhetorical and meant to impy a statement about a group of people
+
+* Is disparaging or inflammatory
+    * Suggests a discriminatory idea against a protected class of people, or seeks confirmation of a stereotype
+    * Makes desparaging attacks/insults against a specific person or group of people
+    * Disparages against a characteristic that is not fixable and not measurable
+
+* Isn't grounded in reality 
+    * Based on false information, or contains absurd assumptions
+
+__File Description__
+- train.csv - the training set
+- test.csv - the test set
+- sample_submission.csv - A sample submission in the correct format
+
+
+__Performance Metric__
+
+Source: https://www.kaggle.com/c/quora-insincere-questions-classification/overview/evaluation
+
+- [F1 Score](https://en.wikipedia.org/wiki/F1_score)
+
+
+#### Exploratory Data Analysis
+
+__Data fields__
+- qid - unique question identifier
+- question_text - Quora question text
+- target - a question labeled "insincere" has a value of 1, otherwise 0
+
+
+__Distribution of data points among output class__
+
+![img1QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/img1Data%5BQIQ%5D.png)
+
+__Word cloud for both sincere and insincere questions__
+![img2QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/img23DataQ%5BQIQ%5D.png)
+
+__Analysis on extracted features__
+
+Basic Feauture Extraction(before cleaning):
+- ____num_words____ = Number of words in question
+ - ____num_capital_let____ = Number of capital letters in the question
+ - ____num_special_char____ = Number of special characters in the question 
+ - ____num_unique_words____ = Number of unique words in the question
+ - ____num_numerics____ = Number of numerics in the question
+ - ____num_char____ = Number of characters in Question
+ - ____num_stopwords____ = Number of stopwords in the question
+
+![img3QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/img4Datagrams%5BQIQ%5D.png)
+
+
+__Observations:__  
+- Data is highly imbalanced with only 6.2% of insincere questions.
+
+- F1-Score seems to be right choice than accuracy here because of data imbalance.
+
+- As we can see insincere questions contain many of the offensive words.
+
+- Most of the questions are related to *People*, *Muslim*,  *Women*, *India*, *Trump*, etc.
+
+- Insincere questions seems to have more words and characters.
+
+- Insincere questions also have more unique words compare to sincere questions.
+
+- Looks like there are some math questions(most of them are classified as insincere) in the data which contains more special chars and numbers.
+
+- Some questions also contains emojis and non-english characters.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
