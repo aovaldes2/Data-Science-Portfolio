@@ -307,7 +307,7 @@ Basic Feauture Extraction(before cleaning):
 ![img3QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/img4Datagrams%5BQIQ%5D.png)
 
 
-__Observations:__  
+__Observations from the EDA:__  
 - Data is highly imbalanced with only 6.2% of insincere questions.
 
 - F1-Score seems to be right choice than accuracy here because of data imbalance.
@@ -324,6 +324,7 @@ __Observations:__
 
 - Some questions also contains emojis and non-english characters.
 
+#### 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at aovaldes2@gmail.com. 
