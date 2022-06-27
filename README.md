@@ -446,17 +446,17 @@ final_preds = 0.5*pred_modelBRNN+0.5*pred_modelBRNN2
 #### Submission
 Checking the best threshold using metrics.f1_score
 
-The metric used in the competition is the F-1 Score, which could not be directly optimized. To approximately optimize it, I tried to find an optimal threshold to make the hard classification. But one tricky thing is, a small validation set is needed to find the “best threshold”, and this threshold could vary significantly for different training.(My best results were achieved with a threshold of 0.35)
+The metric used in the competition is the F-1 Score, which could not be directly optimized. To approximately optimize it, I tried to find an optimal threshold to make the hard classification. But one tricky thing is, a small validation set is needed to find the “best threshold”, and this threshold could vary significantly for different training.
 
 #### Results
-The TextCNN was descarted because it have too poorly results compared with the other models, the named Bidirectional RNN(LSTM) have an score of 0.66684 with an threshold at 0.5 meanwhile the Bidirectional RNN(LSTM)II have 0.67245 with an threshold at 0.35 then the Blending model resultant of a simple lineal combination of the two latets models have the best score of 0.68091.
+The TextCNN was descarted because it have too poorly results compared with the other models, the named Bidirectional RNN(LSTM) have an score of 0.66684 with an threshold at 0.5 meanwhile the Bidirectional RNN(LSTM)II have 0.67245 with an threshold at 0.35 then the Blending model resultant of a simple lineal combination of the two latets models had the best scores with 0.68091(threshold of 0.35) and 0.68231(threshold of 0.32).
 
 ![img3QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/imgQuoraSubmissions%5BQIQ%5D.png)
 
 #### Conclusion:
 This competition had as its main peculiarity that the solutions should run with the competitor's kernels only. My solution focused on deep learning methods, and explore widely used methodologies in this field such as bidirectional RNN, Convolutions layers, Pooling layers etc. It has been an opportunity to learn a lot from kaggle forums and public solutions. Finding more word embeddings and model assembly were the key factors for improving the F1-score.
 
-The F1-score obtained from the blending method performed better than any other model that i tried, giving a private score of 0..68091. Although it could be considered a good score for the problem in question its a little far from the winnings scores(0.71323).
+The F1-score obtained from the blending method performed better than any other model that i tried, giving a private score of 0.68231. Although it could be considered a good score for the problem in question its a little far from the winnings scores(0.71323).
 
 Additional improvements can be achieved by continuing to experiment with more combinations of the layers that were used in this work, as well as using different combinations of word embeddings.
 
