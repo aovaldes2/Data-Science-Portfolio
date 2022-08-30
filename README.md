@@ -143,6 +143,7 @@ Some high correlations between hillshade variables, distance to hydrology. Makes
 #### Baseline Results (No Feature Engineering)
 In this section, the results of different models would be analyzed with the features without Feature Engineering to select a model in the first instance.
 
+<img src="./images/i0Comparations%5BFCTP%5D.png" alt="Im1">
 ![](./images/i0Comparations%5BFCTP%5D.png)
 
 Extreme (extra) random forests outperformed other algorithms with better accuracy performance in this case. The reason might be, I did not focus on tuning the parameters of the each algorithm and used defaults values instead. In any case, due to the type of problem that arises, we will focus on the feature engineering and hyperparameter tuning.
