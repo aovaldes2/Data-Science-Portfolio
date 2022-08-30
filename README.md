@@ -170,7 +170,7 @@ Best LGBMClassifier Params: {'num_leaves': 31, 'n_estimators': 200, 'max_depth':
 ```
 In the following image we can see the best submissions where it can be noted that in the entries written in the form Name(1) all the predictors were already included but as part of the experimentation in the first instance there were fewer created features.
 
-![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/Submisions%5BFCTP%5D.png)
+![img1FCTP](/images/Submisions%5BFCTP%5D.png)
 
 
 --------------------------------------------------------------------------------
@@ -203,12 +203,12 @@ New features were created from existing ones, for example, the datetimes were br
 
 These new features gave the possibility of calculating the average speed of each trip as well as its breakdown by hours, day of the week, etc.
 
-![img1NYCTD](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/SpeedDesc%5BNYCTD%5D.png)
+![img1NYCTD](/images/SpeedDesc%5BNYCTD%5D.png)
 
 ##### Direction
 Another important feature created in this section will be the direction of the trip, this importance could be seen graphically by representing the differences between latitudes and longitudes:
 
-![img2NYCTD](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/DirIntu%5BNYCTD%5D.png)
+![img2NYCTD](/images/DirIntu%5BNYCTD%5D.png)
 
 ##### Clustering
 Besides of keeping entire list of latitude and longitute, the data will be grouped by some approximate locations. It might be helpful for tree-based algorithms. New features were created from clustering such as _pickup_cluster_ and _dropoff_cluster_.
@@ -238,7 +238,7 @@ Several algorithms can be used in this case I prefer a tree-based algorithm XGBR
              random_state=42, silent=1, subsample=0.75)>
 ```
 
-![img1FCTP](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/Submision%5BNYTD%5D.png)
+![img1FCTP](/images/Submision%5BNYTD%5D.png)
 
 
 --------------------------------------------------------------------------------
@@ -299,10 +299,10 @@ __Data fields__
 
 __Distribution of data points among output class__
 
-![img1QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/img1Data%5BQIQ%5D.png)
+![img1QIQ](/images/img1Data%5BQIQ%5D.png)
 
 __Word cloud for both sincere and insincere questions__
-![img2QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/img23DataQ%5BQIQ%5D.png)
+![img2QIQ](/images/img23DataQ%5BQIQ%5D.png)
 
 __Analysis on extracted features__
 
@@ -315,7 +315,7 @@ Basic Feauture Extraction(before cleaning):
  - ____num_char____ = Number of characters in Question
  - ____num_stopwords____ = Number of stopwords in the question
 
-![img3QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/img4Datagrams%5BQIQ%5D.png)
+![img3QIQ](/images/img4Datagrams%5BQIQ%5D.png)
 
 
 __Observations from the EDA:__  
@@ -451,7 +451,7 @@ The metric used in the competition is the F-1 Score, which could not be directly
 #### Results
 The TextCNN was descarted because it have too poorly results compared with the other models, the named Bidirectional RNN(LSTM) have an score of 0.66684 with an threshold at 0.5 meanwhile the Bidirectional RNN(LSTM)II have 0.67245 with an threshold at 0.35 then the Blending model resultant of a simple lineal combination of the two latets models had the best scores with 0.68091(threshold of 0.35) and 0.68231(threshold of 0.32).
 
-![img3QIQ](https://github.com/aovaldes2/Data-Science-Portfolio/blob/main/images/imgQuoraSubmissions%5BQIQ%5D.png)
+![img3QIQ](/images/imgQuoraSubmissions%5BQIQ%5D.png)
 
 #### Conclusion:
 This competition had as its main peculiarity that the solutions should run with the competitor's kernels only. My solution focused on deep learning methods, and explore widely used methodologies in this field such as bidirectional RNN, Convolutions layers, Pooling layers etc. It has been an opportunity to learn a lot from kaggle forums and public solutions. Finding more word embeddings and model assembly were the key factors for improving the F1-score.
