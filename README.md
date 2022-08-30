@@ -170,7 +170,7 @@ Best LGBMClassifier Params: {'num_leaves': 31, 'n_estimators': 200, 'max_depth':
 ```
 In the following image we can see the best submissions where it can be noted that in the entries written in the form Name(1) all the predictors were already included but as part of the experimentation in the first instance there were fewer created features.
 
-![img1FCTP](/images/Submisions%5BFCTP%5D.png)
+![](/images/Submisions%5BFCTP%5D.png)
 
 
 --------------------------------------------------------------------------------
