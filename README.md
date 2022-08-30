@@ -143,7 +143,7 @@ Some high correlations between hillshade variables, distance to hydrology. Makes
 #### Baseline Results (No Feature Engineering)
 In this section, the results of different models would be analyzed with the features without Feature Engineering to select a model in the first instance.
 
-![](/images/i0Comparations%5BFCTP%5D.png)
+![](./images/i0Comparations%5BFCTP%5D.png)
 
 Extreme (extra) random forests outperformed other algorithms with better accuracy performance in this case. The reason might be, I did not focus on tuning the parameters of the each algorithm and used defaults values instead. In any case, due to the type of problem that arises, we will focus on the feature engineering and hyperparameter tuning.
 
@@ -170,7 +170,7 @@ Best LGBMClassifier Params: {'num_leaves': 31, 'n_estimators': 200, 'max_depth':
 ```
 In the following image we can see the best submissions where it can be noted that in the entries written in the form Name(1) all the predictors were already included but as part of the experimentation in the first instance there were fewer created features.
 
-![](/images/Submisions%5BFCTP%5D.png)
+![](./images/Submisions%5BFCTP%5D.png)
 
 
 --------------------------------------------------------------------------------
