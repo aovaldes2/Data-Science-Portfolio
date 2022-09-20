@@ -3,6 +3,8 @@ Repository containing portfolio of data science projects completed by me for aca
 
 _Note: Data used in the projects is for demonstration purposes only._
 
+[[Link to the main website](https://aovaldes2.github.io/Alejandro-O-Valdes-Portfolio/index.html)]
+
 ## Contents
 
 - ### Machine Learning
